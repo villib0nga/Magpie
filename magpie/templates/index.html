@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <meta charset="UTF-8">
+    {% if 'инженер' in prof or 'строитель' in prof %}
+
+        <h2 align="center">Engineer stuffs</h2>
+        <img src="/static/img/ing.png" alt="Here might be scheme">
+
+    {% else %}
+
+        <h2 align="center">Science simulators</h2>
+        <img src="/static/img/sci.png" alt="Here might be scheme">
+
+    {% endif %}
+
+{% endblock %}
